@@ -1,0 +1,39 @@
+#Sets a partir de Listas Juan Daniel jm21-1819
+
+#Aqui procedemos a pedir la cantidad de productos que desea
+Cantidad= int(input("Ingrese la cantidad de productos que desea"))
+tupla1 = []
+i = 0
+
+#utilizando while hacemos un bucle hasta que se complete la asignacion
+while i < Cantidad :
+    
+    Procducto1= input("Agregue productos de la lista 1")
+    tupla1.append(Procducto1)
+    i += 1
+print(tupla1)
+
+#Repetimos el mismo paso 
+Cantidad2= int(input("Ingrese la cantidad de productos que desea"))
+
+tupla2 = []
+n = 0
+while n < Cantidad2 :
+    
+    Procducto2= input("Agregue productos de la lista 1")
+    tupla2.append(Procducto2)
+    n += 1
+print(tupla2)
+
+#hacemos una lista para guardar los repetidos
+repetidos = []
+
+for k in tupla1 :
+    for n in tupla2 :
+        if k == n and k not in repetidos :
+            repetidos.append(k)
+
+#imprimimos los repetidos
+print(repetidos)
+
+

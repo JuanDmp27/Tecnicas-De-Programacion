@@ -1,0 +1,28 @@
+#Números de lotería (Juan Daniel Montas Peralta. jm21-1819)
+
+print("Bienvendo a Lotekatetoca")
+print("Menu")
+print("Para interactuar con el menu, colocar el numero correspondiente")
+print("1 Registrar numero")
+
+
+Prender = int(input("Marque 1: "))
+
+if Prender == 1 :
+    print("Haz elegido registrar")
+    ListaNumeros = []
+    numero = int(input("Añada un numero"))
+    ListaNumeros.append(numero)
+    Decisicon = input("Desea continuar añadiendo mas numeros Si o No ?: ")
+    while Decisicon== "Si" or Decisicon == "si" :
+        numero = int(input("Añada"))
+        ListaNumeros.append(numero)
+        Decisicon = input("Desea continuar añadiendo mas numeros Si o No ?: ")
+
+    print(f"Su listado es {ListaNumeros}")
+    print("Procesando")
+    print(f"Lista orden es {sorted(ListaNumeros)} ")
+
+else:
+    print("Opcion invaalida")
+

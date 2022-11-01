@@ -1,0 +1,28 @@
+#Préstamos usando while (Juan Daniel Montas Peralta. jm21-1819)
+
+#Aqui pedimos al usuario que nos de la informacion
+P = int(input("Ingrese su prestamo"))
+
+Cantidad = int(input("Cantidad con la que desea pagar"))
+
+M= 0
+Acumulado=0
+
+#utilizamos while para cumplir
+     
+while Acumulado < P :
+
+    M = M + 1
+
+    Acumulado= Acumulado + Cantidad
+
+    #Aqui nos daria el resultado
+    
+print("Tardaria %s meses en completar el pago" % (M))
+    
+
+
+
+       
+
+

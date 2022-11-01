@@ -1,0 +1,40 @@
+#TAR10  Más Funciones Juan Daniel jm21-1819
+
+
+#utlizamos def para asignar una funcion
+def separador(num):
+
+    for n in num :
+        print("Numero %s"%(n))
+
+#En esta otra funcion sumamos el resultado de la primera funcion
+        
+def suma(num)   :
+    #utlizamos un contador  un while para efectuar la suma de los digitos
+    n=0
+    while num != 0 :
+        digito = num % 10
+        n += digito
+        num //= 10
+    print(f'La suma de los digitos del número es igual {n}')
+    #utilizamos un for para mostrar los desde el numero 1 hasta el resultado
+    #de la suma
+    for t in range (1, n+1) :
+        print(t)
+        if t % 3 ==0 and t % 5 == 0 :
+            print('fizzbuss')
+        elif t %3== 0 :
+            print("fizz")
+        elif t % 5 ==0:
+            print("buzz")
+        
+#Para poder activar las funciones interctuar por teclado
+num =input('Coloque un numero')
+separador(num)
+suma(int(num))
+
+#mis 4 punto profe >:v
+
+
+
+

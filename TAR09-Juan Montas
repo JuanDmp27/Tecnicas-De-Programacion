@@ -1,0 +1,19 @@
+def Caracteres(Caracter):
+    
+    cantidad=[]
+    for x in Caracter :
+        
+        Numeros= Caracter.count(x)
+        cantidad.append(Numeros)
+       
+        Diccionario= {
+        x : Numeros
+        }
+        
+    
+   
+        print((Diccionario))
+    
+    
+    Caracter = input('Diga su palabra: ')
+    Caracteres(Caracter)

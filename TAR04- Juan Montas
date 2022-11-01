@@ -1,0 +1,37 @@
+#Veces que se repite una palabra (Juan Daniel Montas Peralta. jm21-1819)
+
+from ast import If
+from cgi import print_arguments
+from itertools import count, product
+from operator import length_hint
+from typing import Counter
+
+#Cree una lista en base a lo asignado en la plataforma
+
+Lista = ['carro', 'abanico', 'perro', 'ps4', 'cama', 'carro']
+
+#Utilice el set para que al imprimir la lista no aparezcan los elementos repetidos
+
+print("Aqui podemos ver nuestra lista")
+print(set(Lista))
+
+
+#Aqui use al input para interactuar con el usuario
+
+print("Para que el programa se ejecute bien las letras en MINUSCULAS")
+Producto = input("Ingrese un elemento: ")
+
+#Aqui utilice el comando if para determinar si esta repetido
+
+if Producto == max(['carro', 'abanico', 'perro', 'ps4', 'cama'], key=Lista.count) :
+   print("Esta repetido")
+
+#Aqui nos confirma que esta en la lista pero no repetido
+
+elif Producto in Lista :
+    print("Esta en la lista pero no repetido")
+
+else :
+    print("No esta en la lista")
+
+

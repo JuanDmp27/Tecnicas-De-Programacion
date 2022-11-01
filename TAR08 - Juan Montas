@@ -1,0 +1,25 @@
+#TAR08 - Tablas de multiplicar Juan Daniel jm21-1819
+
+#utilizamos def para crear una funcion
+def Funcion(num1, num2):
+
+#utilizamos un for que recorra los numeros introducidos
+    for t in range (num1, num2+1) :
+    
+    #creamos otro for que vaya recorriendo hasta llegar al 10
+    
+        for n in range(11) :
+
+        #por ultimo imprimimos
+
+            print (" %s x %s = %s" % (t, n, t* n))
+
+#para se ingresen los datos
+
+num1 = int(input("ingrese primer nummero"))
+num2 = int(input("ingrese el segundo numero"))
+
+#llamamos a la funcion
+
+Funcion(num1, num2)
+   

@@ -1,0 +1,20 @@
+from typing import final
+
+
+print("KELOKE")
+print("Para prender pulse 1")
+Prender = int(input("Encienda"))
+
+
+while Prender == 1 :
+    Lista = []
+    Objetos = input("Ingrese un caracter:")
+    Lista.append(Objetos)
+    Decisicon = input("Desea continuar añadiendo mas carcater Si o No ?: ")
+
+    while Decisicon == 'Si' or Decisicon == 'si' :
+        Objetos = input("Ingrese un caracter:")
+        Lista.append(Objetos)
+        Decisicon = input("Desea continuar añadiendo mas carcater Si o No ?: ")
+
+print(Lista)

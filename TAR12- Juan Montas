@@ -1,0 +1,43 @@
+#Los Viajeros   Juan Daniel jm21-1819
+
+#Creamos una lista con 10 tuplas
+
+Lista = [
+    ('Nombre: Juan', 'Edad: 30', 'Destino :', 'Madrid'),
+    ('Nombre: Fernanda', 'Edad: 42', 'Destino: ', 'Portugal'),
+    ('Nombre: Raúl', 'Edad: 28', 'Destino: ', 'Brazil'),
+    ('Nombre: Julio', 'Edad: 32', 'Destino: ', 'Venezuela'),
+    ('Nombre: Mateo', 'Edad: 26', 'Destino: ', 'Argentina'),
+    ('Nombre: María', 'Edad: 32', 'Destino: ', 'Portugal'),
+    ('Nombre: José', 'Edad: 29', 'Destino: ', 'Madrid'),
+    ('Nombre: Marcos', 'Edad: 29', 'Destino: ', 'Venezuela'),
+    ('Nombre: Juana','Edad: 41', 'Destino: ', 'Venezuela'),
+    ('Nombre: Paulina', 'Edad: 35', 'Destino; ', 'Madrid')
+]
+
+L = tuple(Lista)
+#Aqui procedemos a pedir el destino
+Destinos=input("diga su destino: ")
+#Creamos una lista para guardar elementos repetidos
+Viajes = []
+#Utilizamos for para agregar los destinos
+for t in L :
+    Viajes.append(t[3])
+print(set(Viajes))
+
+#Utilizamos if para imprimir los pasajeros
+for n in L :
+    if Destinos in n[3]:
+
+        print(n)
+   
+    
+else:
+    print('he finalizado')
+
+
+
+
+
+
+
